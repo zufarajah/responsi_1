@@ -114,19 +114,40 @@ const Portfolio = () => {
                   >
                     {item.level}
                   </span>
-
-                  {/* Skill bar */}
                   <div
                     ref={(el) => (skillBarsRef.current[index] = el)}
                     className="skill-bar rounded-pill"
                     style={{
-                      "--skill-width": item.level,
+                      width: item.level,
+                      height: '100%',
                       backgroundColor: getSkillBarColor(item.level),
+                      transition: 'width 1.5s ease-in-out',
+                      position: 'relative',
+                      boxShadow: '0 0 10px rgba(0,0,0,0.1)',
+                      background: `linear-gradient(45deg, ${getSkillBarColor(item.level)}, ${item.color})`,
+                      animation: 'pulse 2s infinite'
                     }}
-                  ></div>
-                </div>
+                  >
+                    <style>
+                      {`
+                        @keyframes pulse {
+                          0% { opacity: 0.8; }
+                          50% { opacity: 1; }
+                          100% { opacity: 0.8; }
+                        }
+                        .skill-bar {
+                          transform-origin: left;
+                          transform: scaleX(0);
+                        }
+                        .skill-bar.animate {
+                          transform: scaleX(1);
+                        }
+                      `}
+                    </style>
+                  </div>
+                  </div>
 
-                {/* Deskripsi level */}
+                  {/* Deskripsi level */}
                 <small className="text-muted mt-2 d-block">{item.level}</small>
               </div>
             </div>
