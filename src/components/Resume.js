@@ -1,6 +1,6 @@
 import React from 'react';
 import CV from '../img/cv.pdf';
-import CVpict from '../img/cv.jpg';
+import CVpict from '../img/cvv.png';
 
 const Resume = () => {
   return (
