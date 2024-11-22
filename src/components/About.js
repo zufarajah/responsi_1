@@ -16,10 +16,10 @@ const About = () => {
         
         <div className="about-text">
           <p>
-            Hello! I'm a web developer with a passion for creating dynamic and interactive web applications. I specialize in both front-end and back-end development, continuously exploring new technologies to improve my skill set. 
+            Muhammad Zuhfar Arsalan, seorang programmer yang menggabungkan logika pemrograman dengan desain yang intuitif untuk menciptakan produk digital yang bernilai. 
           </p>
           <p>
-            I love building websites that are user-friendly, responsive, and efficient. When I'm not coding, you can find me exploring new tech, reading, or collaborating on exciting projects.
+            Saya memiliki kemampuan pemecahan masalah yang kuat dan dapat berpikir secara kritis untuk menemukan solusi yang optimal.
           </p>
         </div>
       </div>
