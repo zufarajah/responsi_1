@@ -1,5 +1,6 @@
 import React from 'react';
 import CV from '../img/cv.pdf';
+import CVpict from '../img/cv.jpg';
 
 const Resume = () => {
   return (
@@ -8,6 +9,7 @@ const Resume = () => {
       <a href={CV} download className="btn btn-primary my-4 shadow-sm">
         Download CV
       </a>
+      <img src={CVpict} alt="CVpict" className="img-fluid" />
     </div>
   );
 };
