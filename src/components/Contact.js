@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import igLogo from '../img/ig.png'; // Impor gambar Instagram
 import waLogo from '../img/wa.png'; // Impor gambar WhatsApp
+import GmailLogo from '../img/Gmail.png';
 
 
 
@@ -37,6 +38,33 @@ const Contact = () => {
               Follow me
             </a>
           </p>
+                
+        </div>
+ {/* email */}
+        <div className="contact-item text-center">
+          <a
+            href="mailto:zufar.arsalan15@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={GmailLogo}
+              alt="Email Logo"
+              title="Follow me on Instagram"
+              className="social-logo"
+            />
+          </a>
+          <p>
+            <a
+              href="mailto:zufar.arsalan15@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link instagram"
+            >
+              Follow me
+            </a>
+          </p>
+                
         </div>
 
         {/* WhatsApp */}
